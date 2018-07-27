@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notificationRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:paddingBottom="10dp"
+
+        />
+
+   <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_gravity="bottom"
+       android:layout_alignParentBottom="true">
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="textPersonName"
+           android:ems="10"
+           android:layout_gravity="bottom"
+           android:id="@+id/sendEditText"
+           android:layout_weight="1"
+           android:hint="Type Your Text Here.." />
+
+       <Button
+           android:text="Send"
+           android:layout_width="55dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom"
+           android:id="@+id/sendBtn"
+           android:layout_weight="0.15"
+           android:enabled="false"/>
+
+   </LinearLayout>
+
+</RelativeLayout>
