@@ -97,7 +97,7 @@ public class Public_Notice_Adapters extends RecyclerView.Adapter<Public_Notice_A
     private void applyProfilePicture(Public_Notice_Adapters.MyViewHolder holder, PublicNotice notice) {
         System.out.println("Profile pic method called!");
         if (!notice.getImage().equals(null)) {
-            String imgUrl = APIUrl.BASE_URL +"images/"+ notice.getImage();
+            String imgUrl = APIUrl.BASE_URL +"images/"+ "IMG_5b576c372d065";//notice.getImage();
             System.out.println(imgUrl);
 
             Glide.with(mContext).load(imgUrl)

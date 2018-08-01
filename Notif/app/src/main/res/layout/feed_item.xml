@@ -3,8 +3,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/feed_bg"
-    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
-    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
     android:layout_marginTop="@dimen/feed_item_margin"
     android:layout_marginLeft="@dimen/feed_item_margin"
     android:layout_marginRight="@dimen/feed_item_margin"
@@ -22,12 +22,21 @@
             android:orientation="horizontal"
             android:paddingLeft="@dimen/feed_item_padding_left_right"
             android:paddingRight="@dimen/feed_item_padding_left_right">
-            <ImageView
-                android:id="@+id/profilePic"
-                android:src="@mipmap/ic_launcher"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="fitCenter"/>
+            <RelativeLayout
+                android:id="@+id/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_width_height"
+                    android:layout_height="@dimen/icon_width_height"
+                    android:src="@drawable/bg_circle" />
+
+                <ImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="@dimen/icon_width_height"
+                    android:layout_height="@dimen/icon_width_height" />
+            </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
